@@ -14,7 +14,8 @@ export default new Vuex.Store({
       courses: 'http://127.0.0.1:8000/api/v1/courses/',
       pricePolicy: 'http://127.0.0.1:8000/api/v1/price_policy/',
       shopCar: 'http://127.0.0.1:8000/api/v1/shop_car/',
-    }
+    },
+    courseList:[],
   },
   getters: {
     // 组件中通过 this.$store.getters.isLogin 调用
@@ -37,7 +38,9 @@ export default new Vuex.Store({
       state.token = null
       Cookie.remove('username')
       Cookie.remove('token')
-
+    },
+    initCourseList: function (state) {
+      // body...
     }
   }
 })

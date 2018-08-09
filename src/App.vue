@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.min.css'
   import LHeader from './components/Head'
   import LFooter from './components/Foot'
 

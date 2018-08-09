@@ -23,7 +23,7 @@ export default new Router({
     },
     {
       path: '/index',
-      name: 'index',
+      name: 'index_tem',
       component: Index
     },
     {
